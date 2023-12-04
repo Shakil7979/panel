@@ -9,7 +9,7 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
 
-        <title>Web Template</title>
+        <title>Panel Website</title>
         <link rel="icon" href="assets/images/favicon.png">
 
         <!-- Bootstrap -->
@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
         <!-- Normalize -->
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
         <!-- CSS Files -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -27,23 +28,92 @@
         
         <!--=====================  Start Header Area  ====================-->
         <header class="header_area">
-
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/Logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#" class="active"><i class="fa-solid fa-house"></i> &nbsp; Panel twórcy</a></li>
+                            <li><a href="#"><i class="fa-solid fa-square-plus"></i> &nbsp; DODAJ PLAKAT</a></li>
+                            <li><a href="#"><i class="fa-solid fa-dharmachakra"></i> &nbsp; EDUKACJA</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_user">
+                        <a href="#"><img src="assets/images/user.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </header>
         <!--=====================  End Header Area  ====================-->
 
         <main class="main_area"> 
-            <!--=====================  Start Banner Area  ====================-->
-            <section class="banner_area">
-
+            <!--=====================  Start Main Area  ====================-->
+            <section class="main_content">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-md-6">
+                            <div class="user_info">
+                                <div class="user_cont">
+                                    <h4>Cześć, Patrycja!</h4>
+                                    <p>Znajdujesz się w Panelu Twórcy Ładne.co Możesz tutaj sprawdzić statystyki sprzedaży oraz <span>dodać nowe projekty</span>.</p>
+                                </div>
+                                <div class="user_img">
+                                    <img src="assets/images/user2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="datatable_main">
+                                <table id="example" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Przychód</th>
+                                            <th>Sprzedanych</th>
+                                            <th>Sprzedanych</th>
+                                            <th>Przychód</th>
+                                        </tr>
+                                    </thead> 
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="done_chart">
+                                <div class="done_header">
+                                    <h4>Dane sprzedaży</h4>
+                                    <select name="" id="">
+                                        <option value="">Ostatni miesiąc</option>
+                                        <option value="">Ostatni miesiąc</option>
+                                        <option value="">Ostatni miesiąc</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="done_card_left">
+                                            <h5><img src="assets/images/doller.png" alt=""> Przychód</h5>
+                                            <h2>846.00 PLN <span><i class="fa-solid fa-arrow-up"></i> &nbsp; +22.5%</span></h2>
+                                            <p><span>+216.60 PLN</span> niż poprz. miesiąc</p>
+                                            <a href="#" class="btn_1">WYPŁAĆ ŚRODKI</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="done_card_right">
+                                            <h5><img src="assets/images/diamond.png" alt="">Sprzedane plakaty</h5>
+                                            <h2>7 szt. <span><i class="fa-solid fa-arrow-down"></i> -12.5%</span></h2>
+                                            <p><span>1 szt. mniej</span> niż poprz. miesiąc</p>
+                                            <a href="#" class="btn_2">HISTORIA ROZLICZEŃ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <!--=====================  End Banner Area  ====================--> 
-        </main>
-                
-        <!--=====================  Start Header Area  ====================-->
-        <footer class="footer_area">
-
-        </footer>
-        <!--=====================  End Header Area  ====================-->
+            <!--=====================  End Main Area  ====================--> 
+        </main> 
  
 
 
@@ -53,6 +123,7 @@
         <script src="assets/js/popper.min.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
         <!-- Modernizr -->
         <script src="assets/js/modernizr-3.11.2.min.js"></script>
         <!-- Custom JS (Handed)-->
