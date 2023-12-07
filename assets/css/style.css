@@ -629,7 +629,7 @@ table.dataTable thead > tr > th.sorting::after, table.dataTable thead > tr > th.
 /************* Header CSS ************/
 /************************************/
 
-.mobile_bars{
+.menu_icon{
 	display: none;
 }
 
@@ -644,6 +644,75 @@ table.dataTable thead > tr > th.sorting::after, table.dataTable thead > tr > th.
 .desktop_hide{
 	display: none;
 }
+
+
+/*Start Mobile Menu icon*/
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+	width: 28px;
+	height: 23px;
+	position: relative;
+	margin: 0px;
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: #000000;
+	border-radius: 0px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+	top: 8px;
+	-webkit-transform-origin: left center;
+	    -ms-transform-origin: left center;
+	        transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+	top: 16px;
+	-webkit-transform-origin: left center;
+	    -ms-transform-origin: left center;
+	        transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	top: -2px;
+	left: 2px;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	top: 18px;
+	left: 2px;
+}
+/*End Mobile Menu icon*/
 
 
 /* 
