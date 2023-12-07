@@ -20,6 +20,12 @@ $(document).ready(function(){
     });
 
 
+	$(document).on('click','.mobile_bars a', function(){
+		$('.desktop_menu').slideToggle();
+	});
+
+
+
 });
 
 

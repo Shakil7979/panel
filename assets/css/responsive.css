@@ -5,15 +5,109 @@
 }
 
 @media all and (max-width: 1199px){
-
+    .user_img { 
+        display: none;
+    }
+    .single_tr li:nth-child(1), .datatable_head ul li:nth-child(1) {
+        flex: 0 0 182px;
+    }
+    .datatabLe_main_content {
+        overflow-y: scroll;
+    }
 }
 
 @media all and (max-width: 991px){
-	
-}
+    .user_info { 
+        padding: 24px; 
+    }
+    .done_chart { 
+        margin-top: 40px;
+    }
+}   
 
+@media all and (min-width: 767px){
+    .desktop_menu {
+        display: block !important;
+    }
+}
 @media all and (max-width: 767px){
-	
+	.desktop_menu {
+        display: none;
+    }
+    .mobile_bars{
+        display: block;
+    }
+    
+    .mobile_bars a i {
+        font-size: 32px;
+        color: #000;
+    }
+
+    .header{
+        position: relative;
+    }
+
+    .menu.desktop_menu {
+        position: absolute;
+        top: 100%;
+        z-index: 9;
+        left: 0; 
+        width: 100%;
+    }
+
+    .menu.desktop_menu ul {
+        background: #FBFBBB;
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    .datatable_main { 
+        padding: 18px; 
+        border-radius: 10px;
+    }
+    .done_chart { 
+        padding: 18px;
+        border-radius: 10px;
+    }
+    .done_card_right h5,
+    .done_card_left h5 { 
+        font-size: 12px; 
+    }
+    .done_card_right h2 , 
+    .done_card_left h2 { 
+        font-size: 21px;  
+        flex-direction: column; 
+        align-items: baseline;
+    }
+    .done_card_right p ,
+    .done_card_left p { 
+        display: none;
+    }
+    .done_card_right h2 span ,
+    .done_card_left h2 span { 
+        margin-bottom: 12px;
+    }
+    .btn_2 { 
+        font-size: 9px; 
+    }
+    .done_header h4 { 
+        font-size: 16px; 
+    }
+    .user_cont h4 { 
+        font-size: 26px; 
+    }
+    .user_cont p { 
+        font-size: 14px; 
+    }
+    .datatable_main { 
+        margin-top: 10px;
+    }
+    .done_header select { 
+        font-size: 12px; 
+    }
+    .data_img h4 { 
+        font-size: 11px; 
+    }
+    
 }
 
 @media all and (max-width: 575px){

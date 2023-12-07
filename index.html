@@ -30,12 +30,15 @@
         <header class="header_area">
             <div class="container">
                 <div class="header">
+                    <div class="mobile_bars">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </div>
                     <div class="logo">
                         <a href="index.html">
                             <img src="assets/images/Logo.png" alt="">
                         </a>
                     </div>
-                    <div class="menu">
+                    <div class="menu desktop_menu">
                         <ul>
                             <li><a href="#" class="active"><i class="fa-solid fa-house"></i> &nbsp; Panel twórcy</a></li>
                             <li><a href="#"><i class="fa-solid fa-square-plus"></i> &nbsp; DODAJ PLAKAT</a></li>
@@ -55,7 +58,7 @@
             <section class="main_content">
                 <div class="container">
                     <div class="row gx-5">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="user_info">
                                 <div class="user_cont">
                                     <h4>Cześć, Patrycja!</h4>
@@ -74,137 +77,139 @@
                                         <option value="">Ostatni rok</option> 
                                     </select>
                                 </div>
-                                <div class="datatable_head">
-                                    <ul>
-                                        <li><span>Produkt</span></li>
-                                        <li><span>Status</span></li>
-                                        <li><span>Sprzedanych <i class="fa-solid fa-arrow-down"></i></span></li>
-                                        <li><span>Przychód</span></li>
-                                    </ul>
-                                </div>
-                                <div class="datatable_body">
-                                    <div class="data_table_item">
-                                        <ul class="single_tr"> 
-                                            <li class="class_first_plus">
-                                                <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
-                                                <div class="data_img"><img src="assets/images/data.png" alt=""> <h4>MINE</h4> </div></li>
-                                            <li><span class="status_data">W sprzedaży</span></li>
-                                            <li><p>16 szt.</p></li>
-                                            <li><p>1422.00 PLN</p></li>
+                                <div class="datatabLe_main_content">
+                                    <div class="datatable_head">
+                                        <ul>
+                                            <li><span>Produkt</span></li>
+                                            <li><span>Status</span></li>
+                                            <li><span>Sprzedanych <i class="fa-solid fa-arrow-down"></i></span></li>
+                                            <li><span>Przychód</span></li>
                                         </ul>
-                                        <div class="extra_data_tr">
-                                            <ul class="single_tr"> 
-                                                <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>40x50 cm</h4> </div></li>
-                                                <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>16 szt.</p></li>
-                                                <li><p>1422.00 PLN</p></li>
-                                            </ul>
-                                            <ul class="single_tr"> 
-                                                <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>50x70 cm</h4> </div></li>
-                                                <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>0 szt.</p></li>
-                                                <li><p>0 PLN</p></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>  
-                                    <div class="data_table_item">
-                                        <ul class="single_tr single_tr_bg"> 
-                                            <li class="class_first_plus">
-                                                <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
-                                                <div class="data_img"><img src="assets/images/data2.png" alt=""> <h4>QUEENS OF HEARTS</h4> </div></li>
-                                            <li><span class="status_data">W sprzedaży</span></li>
-                                            <li><p>11 szt.</p></li>
-                                            <li><p>979.00 PLN</p></li>
-                                        </ul>
-                                        
-                                        <div class="extra_data_tr">
-                                            <ul class="single_tr"> 
-                                                <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>40x50 cm</h4> </div></li>
-                                                <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>16 szt.</p></li>
-                                                <li><p>1422.00 PLN</p></li>
-                                            </ul>
-                                            <ul class="single_tr"> 
-                                                <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>50x70 cm</h4> </div></li>
-                                                <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>0 szt.</p></li>
-                                                <li><p>0 PLN</p></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    
-                                    <div class="data_table_item">
-                                        <ul class="single_tr"> 
-                                            <li class="class_first_plus">
-                                                <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
-                                                <div class="data_img"><img src="assets/images/data3.png" alt=""> <h4>I</h4> </div></li>
-                                            <li><span class="status_data danger">Niedostępne</span></li>
-                                            <li><p>11 szt.</p></li>
-                                            <li><p>979.00 PLN</p></li>
-                                        </ul>
-                                        
-                                        <div class="extra_data_tr">
+                                    <div class="datatable_body">
+                                        <div class="data_table_item">
                                             <ul class="single_tr"> 
                                                 <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>40x50 cm</h4> </div></li>
+                                                    <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
+                                                    <div class="data_img"><img src="assets/images/data.png" alt=""> <h4>MINE</h4> </div></li>
                                                 <li><span class="status_data">W sprzedaży</span></li>
                                                 <li><p>16 szt.</p></li>
                                                 <li><p>1422.00 PLN</p></li>
                                             </ul>
-                                            <ul class="single_tr"> 
+                                            <div class="extra_data_tr">
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>40x50 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>16 szt.</p></li>
+                                                    <li><p>1422.00 PLN</p></li>
+                                                </ul>
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>0 szt.</p></li>
+                                                    <li><p>0 PLN</p></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>  
+                                        <div class="data_table_item">
+                                            <ul class="single_tr single_tr_bg"> 
                                                 <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
+                                                    <div class="data_img"><img src="assets/images/data2.png" alt=""> <h4>QUEENS OF HEARTS</h4> </div></li>
                                                 <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>0 szt.</p></li>
-                                                <li><p>0 PLN</p></li>
+                                                <li><p>11 szt.</p></li>
+                                                <li><p>979.00 PLN</p></li>
                                             </ul>
+                                            
+                                            <div class="extra_data_tr">
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>40x50 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>16 szt.</p></li>
+                                                    <li><p>1422.00 PLN</p></li>
+                                                </ul>
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>0 szt.</p></li>
+                                                    <li><p>0 PLN</p></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="data_table_item">
-                                        <ul class="single_tr single_tr_bg"> 
-                                            <li class="class_first_plus">
-                                                <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
-                                                <div class="data_img"><img src="assets/images/data4.png" alt=""> <h4>VALENTINES DAY</h4> </div></li>
-                                            <li><span class="status_data">W sprzedaży</span></li>
-                                            <li><p>10 szt.</p></li>
-                                            <li><p>880.00 PLN</p></li>
-                                        </ul>
                                         
-                                        <div class="extra_data_tr">
+                                        <div class="data_table_item">
                                             <ul class="single_tr"> 
                                                 <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>40x50 cm</h4> </div></li>
-                                                <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>16 szt.</p></li>
-                                                <li><p>1422.00 PLN</p></li>
+                                                    <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
+                                                    <div class="data_img"><img src="assets/images/data3.png" alt=""> <h4>I</h4> </div></li>
+                                                <li><span class="status_data danger">Niedostępne</span></li>
+                                                <li><p>11 szt.</p></li>
+                                                <li><p>979.00 PLN</p></li>
                                             </ul>
-                                            <ul class="single_tr"> 
+                                            
+                                            <div class="extra_data_tr">
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>40x50 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>16 szt.</p></li>
+                                                    <li><p>1422.00 PLN</p></li>
+                                                </ul>
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>0 szt.</p></li>
+                                                    <li><p>0 PLN</p></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="data_table_item">
+                                            <ul class="single_tr single_tr_bg"> 
                                                 <li class="class_first_plus">
-                                                    <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                                    <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <a href="#" class="data_action"><i class="fa-solid fa-circle-plus"></i></a>
+                                                    <div class="data_img"><img src="assets/images/data4.png" alt=""> <h4>VALENTINES DAY</h4> </div></li>
                                                 <li><span class="status_data">W sprzedaży</span></li>
-                                                <li><p>0 szt.</p></li>
-                                                <li><p>0 PLN</p></li>
+                                                <li><p>10 szt.</p></li>
+                                                <li><p>880.00 PLN</p></li>
                                             </ul>
+                                            
+                                            <div class="extra_data_tr">
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>40x50 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>16 szt.</p></li>
+                                                    <li><p>1422.00 PLN</p></li>
+                                                </ul>
+                                                <ul class="single_tr"> 
+                                                    <li class="class_first_plus">
+                                                        <a href="#" class="data_action"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                        <div class="data_img"> <h4>50x70 cm</h4> </div></li>
+                                                    <li><span class="status_data">W sprzedaży</span></li>
+                                                    <li><p>0 szt.</p></li>
+                                                    <li><p>0 PLN</p></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <!-- done right site  -->
                             <div class="done_chart">
                                 <div class="done_header">
@@ -216,7 +221,7 @@
                                     </select>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="done_card_left">
                                             <h5><img src="assets/images/doller.png" alt=""> Przychód</h5>
                                             <h2>846.00 PLN <span><i class="fa-solid fa-arrow-up"></i> &nbsp; +22.5%</span></h2>
@@ -224,7 +229,7 @@
                                             <a href="#" class="btn_1">WYPŁAĆ ŚRODKI</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="done_card_right">
                                             <h5><img src="assets/images/diamond.png" alt="">Sprzedane plakaty</h5>
                                             <h2>7 szt. <span><i class="fa-solid fa-arrow-down"></i> -12.5%</span></h2>

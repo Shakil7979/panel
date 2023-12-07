@@ -607,10 +607,27 @@ table.dataTable thead > tr > th.sorting::after, table.dataTable thead > tr > th.
 	font-size: 24px;
 }
 
+.check_progress img {
+	width: 100%;
+}
+
+.done_card_right h5 ,
+.done_card_left h5 { 
+	display: flex;
+	align-items: center;
+}
+
+.user_cont p span {
+	font-weight: 600;
+}
 
 /**************************************/
 /************* Header CSS ************/
 /************************************/
+
+.mobile_bars{
+	display: none;
+}
 
 
 
