@@ -1,23 +1,49 @@
 $(document).ready(function(){ 
 
-    var count = 0 ;
-    $(document).on('click','.data_action',function(){  
-        $(this).closest('.data_table_item').find('.extra_data_tr').slideToggle();
-        if(count == 0){
-            $(this).find('.fa-solid').removeClass('fa-circle-plus');
-            $(this).find('.fa-solid').addClass('fa-circle-minus');
-            $(this).closest('.data_table_item').find('.single_tr').css({'border-bottom':'1px solid #EFF1E8'});
+    // var count = 0 ;
+    // $(document).on('click','.data_action',function(){  
+    //     $(this).closest('.data_table_item').find('.extra_data_tr').slideToggle();
+    //     if(count == 0){
+    //         $(this).find('.fa-solid').removeClass('fa-circle-plus');
+    //         $(this).find('.fa-solid').addClass('fa-circle-minus');
+    //         $(this).closest('.data_table_item').find('.single_tr').css({'border-bottom':'1px solid #EFF1E8'});
 
-            count = 1;
-        }else{ 
-            $(this).find('.fa-solid').addClass('fa-circle-plus');
-            $(this).find('.fa-solid').removeClass('fa-circle-minus');
-            $(this).closest('.data_table_item').find('.single_tr').css({'border':'1px solid transparent'});
+    //         count = 1;
+    //     }else{ 
+    //         $(this).find('.fa-solid').addClass('fa-circle-plus');
+    //         $(this).find('.fa-solid').removeClass('fa-circle-minus');
+    //         $(this).closest('.data_table_item').find('.single_tr').css({'border':'1px solid transparent'});
 
-            count = 0; 
-        } 
-        return false;
-    });
+    //         count = 0; 
+    //     } 
+    //     return false;
+    // });
+
+	$(document).on('click', '.data_action', function () {
+		// Find the closest data_table_item
+		var data_table_item = $(this).closest('.data_table_item');
+	
+		// Get the current state from data
+		var count = data_table_item.data('state') || 0;
+	
+		// Toggle the visibility of the extra_data_tr
+		data_table_item.find('.extra_data_tr').slideToggle();
+	
+		// Toggle the icon and border based on the state
+		if (count === 0) {
+			$(this).find('.fa-solid').removeClass('fa-circle-plus').addClass('fa-circle-minus');
+			data_table_item.find('.single_tr').css({'border-bottom': '1px solid #EFF1E8'});
+		} else {
+			$(this).find('.fa-solid').addClass('fa-circle-plus').removeClass('fa-circle-minus');
+			data_table_item.find('.single_tr').css({'border': '1px solid transparent'});
+		}
+	
+		// Update the state in data
+		data_table_item.data('state', 1 - count);
+	
+		return false;
+	});
+	
 
 
 	$(document).on('click','.menu_icon', function(){
