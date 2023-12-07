@@ -21,7 +21,7 @@
         padding: 24px; 
     }
     .done_chart { 
-        margin-top: 40px;
+        margin-top: 10px;
     }
 }   
 
@@ -34,10 +34,38 @@
 	.desktop_menu {
         display: none;
     }
+    .mobile_hide{
+        display: none;
+    }
     .mobile_bars{
         display: block;
     }
+    .desktop_hide{
+        display: block;
+    }
+    .status_data span {
+        display: none;
+    }
+    .single_tr li:nth-child(3),
+    .datatable_head ul li:nth-child(3) {
+        display: none;
+    }
+    .single_tr li:nth-child(3), .single_tr li:nth-child(4), .datatable_head ul li:nth-child(3), .datatable_head ul li:nth-child(4) {
+        flex: 0 0 112px;
+    }
+    .single_tr li, .datatable_head ul li {
+        flex: 0 0 70px;
+    }
+    .single_tr li:nth-child(1), .datatable_head ul li:nth-child(1) {
+        flex: 0 0 169px;
+    }
     
+    
+    .danger_close,
+    .check_status {
+        display: block;
+    }
+
     .mobile_bars a i {
         font-size: 32px;
         color: #000;
@@ -111,7 +139,10 @@
 }
 
 @media all and (max-width: 575px){
-	
+	.btn_2 span ,
+	.btn_1 span {
+        display: none;
+    }
 }
 
 @media all and (max-width: 450px){
